@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29002498D7B616C24352F900 /* Pods_TodayBasket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622488EB0783DA75CFD4AE24 /* Pods_TodayBasket.framework */; };
+		30DE6FF61E55C633009F8342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DE6FF41E55C633009F8342 /* Main.storyboard */; };
+		30E0B9B31E556A9A004E4046 /* Contest_Detail_Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E0B9B21E556A9A004E4046 /* Contest_Detail_Setting.swift */; };
+		30E0B9B51E556AD0004E4046 /* Contest_Detail_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E0B9B41E556AD0004E4046 /* Contest_Detail_ViewController.swift */; };
+		30EA1FFD1E5708B6007F0B91 /* Contest_Application_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA1FFC1E5708B6007F0B91 /* Contest_Application_ViewController.swift */; };
+		3110B5AA1E49C9F500E43674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110B5A91E49C9F500E43674 /* AppDelegate.swift */; };
+		3110B5AC1E49C9F500E43674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110B5AB1E49C9F500E43674 /* ViewController.swift */; };
+		3110B5B11E49C9F500E43674 /* Trophy_ic.png.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3110B5B01E49C9F500E43674 /* Trophy_ic.png.xcassets */; };
+		3110B5B41E49C9F500E43674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3110B5B21E49C9F500E43674 /* LaunchScreen.storyboard */; };
+		3110B5BF1E49C9F600E43674 /* slidetest1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110B5BE1E49C9F600E43674 /* slidetest1Tests.swift */; };
+		3110B5CA1E49C9F600E43674 /* slidetest1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110B5C91E49C9F600E43674 /* slidetest1UITests.swift */; };
+		3110B5DB1E49CAC400E43674 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110B5DA1E49CAC400E43674 /* SWRevealViewController.m */; };
+		3110B5DD1E49CBC200E43674 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110B5DC1E49CBC200E43674 /* BackTableVC.swift */; };
+		3110B5DF1E4ADCD300E43674 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110B5DE1E4ADCD300E43674 /* SlideMenuViewController.swift */; };
+		3110B5EE1E4B191B00E43674 /* SlideMenu_TeamSearch_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3110B5ED1E4B191B00E43674 /* SlideMenu_TeamSearch_TableViewController.swift */; };
+		316E37E51E5294E600B48FC0 /* SlideMenu_TeamManager_TeamIntro_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E37E41E5294E600B48FC0 /* SlideMenu_TeamManager_TeamIntro_ViewController.swift */; };
+		316E37E71E54187900B48FC0 /* SlideMenu_TeamManager_ContestJoin_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E37E61E54187900B48FC0 /* SlideMenu_TeamManager_ContestJoin_ViewController.swift */; };
+		316E37E91E5455FB00B48FC0 /* SlideMenu_TeamManager_ContestJoin_Focus_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E37E81E5455FB00B48FC0 /* SlideMenu_TeamManager_ContestJoin_Focus_ViewController.swift */; };
+		316E37EB1E559FCE00B48FC0 /* SlideMenu_TeamManager_PlayerManager_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E37EA1E559FCE00B48FC0 /* SlideMenu_TeamManager_PlayerManager_ViewController.swift */; };
+		317057A91E4DA5560091D4F1 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 317057A81E4DA5560091D4F1 /* UINavigationBar+Awesome.m */; };
+		317057B41E5199FF0091D4F1 /* SlideMenu_TeamMake_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317057B31E5199FF0091D4F1 /* SlideMenu_TeamMake_ViewController.swift */; };
+		319FFD5F1E61DF590042A8B8 /* SlideMenu_TeamSearch1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FFD5E1E61DF590042A8B8 /* SlideMenu_TeamSearch1_ViewController.swift */; };
+		31B7B5E91E654193007B3923 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7B5E81E654193007B3923 /* CollectionViewController.swift */; };
+		3203FF351F1B4656005F5393 /* MatchRegisterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203FF341F1B4656005F5393 /* MatchRegisterDetailViewController.swift */; };
+		320810F91F245C9900A67566 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320810F81F245C9900A67566 /* GuideViewController.swift */; };
+		320810FB1F24694500A67566 /* ChangeHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320810FA1F24694500A67566 /* ChangeHWViewController.swift */; };
+		320810FD1F24695500A67566 /* ChangePositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320810FC1F24695500A67566 /* ChangePositionViewController.swift */; };
+		320ADF001E8B7EA70066ED5F /* TeamManageUserRegisterPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320ADEFF1E8B7EA70066ED5F /* TeamManageUserRegisterPopUpViewController.swift */; };
+		320B4FD31EA237620095FEFD /* TeamManageChangeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B4FD21EA237620095FEFD /* TeamManageChangeAddressViewController.swift */; };
+		320B4FD51EA237750095FEFD /* TeamManageChangeCourtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B4FD41EA237750095FEFD /* TeamManageChangeCourtViewController.swift */; };
+		320B4FD71EA237820095FEFD /* TeamManageChangeIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320B4FD61EA237820095FEFD /* TeamManageChangeIntroViewController.swift */; };
+		320EB3221EFFB09200186ACA /* MatchResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320EB3211EFFB09200186ACA /* MatchResultDetailViewController.swift */; };
+		320EB3241EFFB0C400186ACA /* MatchResultUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320EB3231EFFB0C400186ACA /* MatchResultUploadViewController.swift */; };
+		322031371F0E9DAD003430F6 /* CourtCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322031361F0E9DAD003430F6 /* CourtCommentViewController.swift */; };
+		3224A5D11E711B8500042DC9 /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224A5D01E711B8500042DC9 /* TeamDetailViewController.swift */; };
+		3224A5D51E751E9000042DC9 /* TeamUserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3224A5D41E751E9000042DC9 /* TeamUserSetting.swift */; };
+		3227FDD21EBF0E8E00EE450E /* CourtFeedSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227FDD11EBF0E8E00EE450E /* CourtFeedSetting.swift */; };
+		3227FDD41EC0667700EE450E /* CourtIntroUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227FDD31EC0667700EE450E /* CourtIntroUpdateViewController.swift */; };
+		3227FDD61EC2DA1000EE450E /* CourtFeedUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227FDD51EC2DA1000EE450E /* CourtFeedUpdateViewController.swift */; };
+		324281A11E9B701500D70560 /* TeamRankSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324281A01E9B701500D70560 /* TeamRankSetting.swift */; };
+		324BBCA31EA73099007954A7 /* cm_arrow_back_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 324BBCA21EA73099007954A7 /* cm_arrow_back_white.png */; };
+		324BBCA51EA75E73007954A7 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BBCA41EA75E73007954A7 /* NoticeViewController.swift */; };
+		324BBCA71EA75E7C007954A7 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BBCA61EA75E7C007954A7 /* RecommendViewController.swift */; };
+		324BBCA91EA8CC0A007954A7 /* NoticeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BBCA81EA8CC0A007954A7 /* NoticeSetting.swift */; };
+		324BBCAB1EA8D7AC007954A7 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BBCAA1EA8D7AC007954A7 /* NoticeDetailViewController.swift */; };
+		324BBCAD1EACA808007954A7 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BBCAC1EACA808007954A7 /* MatchViewController.swift */; };
+		324BBCAF1EACAE0A007954A7 /* MatchSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BBCAE1EACAE0A007954A7 /* MatchSetting.swift */; };
+		324BBCB11EACBCB4007954A7 /* MatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BBCB01EACBCB4007954A7 /* MatchDetailViewController.swift */; };
+		324BBCB31EACC6BE007954A7 /* MatchUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BBCB21EACC6BE007954A7 /* MatchUploadViewController.swift */; };
+		324F2F9B1F382DAC00D4F142 /* CourtRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F2F9A1F382DAC00D4F142 /* CourtRegisterViewController.swift */; };
+		325950BD1F00C13B00ED12E0 /* MatchResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325950BC1F00C13B00ED12E0 /* MatchResultListViewController.swift */; };
+		325C636C1F04B555007C3B7D /* MatchResultSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C636B1F04B555007C3B7D /* MatchResultSetting.swift */; };
+		32727C851E5EC29100E40C36 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32727C841E5EC29100E40C36 /* 111.jpg */; };
+		3278D3111F0A2541007A9DBC /* MatchRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278D3101F0A2541007A9DBC /* MatchRegisterViewController.swift */; };
+		3278D3131F0A2550007A9DBC /* MatchRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278D3121F0A2550007A9DBC /* MatchRequestViewController.swift */; };
+		3278D3151F0A258C007A9DBC /* MatchResultAllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278D3141F0A258C007A9DBC /* MatchResultAllListViewController.swift */; };
+		3278D3171F0A259A007A9DBC /* MatchResultTeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278D3161F0A259A007A9DBC /* MatchResultTeamListViewController.swift */; };
+		328534691E5D8FF7002FBAE5 /* ChangePersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328534681E5D8FF7002FBAE5 /* ChangePersonalInfoViewController.swift */; };
+		3285346B1E5D9002002FBAE5 /* WithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285346A1E5D9002002FBAE5 /* WithdrawalViewController.swift */; };
+		328534761E5E9AC7002FBAE5 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 328534731E5E9AC7002FBAE5 /* check.png */; };
+		328534771E5E9AC7002FBAE5 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 328534741E5E9AC7002FBAE5 /* uncheck.png */; };
+		328534781E5E9AC7002FBAE5 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 328534751E5E9AC7002FBAE5 /* back.png */; };
+		3285347A1E5EB105002FBAE5 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328534791E5EB105002FBAE5 /* TermsViewController.swift */; };
+		32877B381ED6632400006C70 /* revolution-basketball-logo-concept-ideas.png in Resources */ = {isa = PBXBuildFile; fileRef = 32877B371ED6632400006C70 /* revolution-basketball-logo-concept-ideas.png */; };
+		32877B3C1ED663DE00006C70 /* realmardrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 32877B3B1ED663DE00006C70 /* realmardrid.png */; };
+		3291B15E1E7A625700C5785D /* TeamUserDetailPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291B15D1E7A625700C5785D /* TeamUserDetailPopUpViewController.swift */; };
+		3291B1601E81056600C5785D /* TeamManageUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291B15F1E81056600C5785D /* TeamManageUserViewController.swift */; };
+		3291B1621E81059D00C5785D /* TeamManageContestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291B1611E81059D00C5785D /* TeamManageContestViewController.swift */; };
+		3291B1641E8105AB00C5785D /* TeamManageInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291B1631E8105AB00C5785D /* TeamManageInfoViewController.swift */; };
+		3291B1661E824FF900C5785D /* TeamManageUserPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291B1651E824FF900C5785D /* TeamManageUserPopUpViewController.swift */; };
+		3291B1681E84FA2C00C5785D /* ContestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291B1671E84FA2C00C5785D /* ContestViewController.swift */; };
+		32A244241E4AFE3200CDA02F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A244231E4AFE3200CDA02F /* LoginViewController.swift */; };
+		32A244261E4AFE3B00CDA02F /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A244251E4AFE3B00CDA02F /* RegisterPageViewController.swift */; };
+		32B23DD61EB49A1000D0FFB7 /* CourtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B23DD51EB49A1000D0FFB7 /* CourtViewController.swift */; };
+		32B695A01E71074900CB2DAC /* TeamSearchSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6959F1E71074900CB2DAC /* TeamSearchSetting.swift */; };
+		32D939761F151C6800AA9BD7 /* CourtDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D939751F151C6800AA9BD7 /* CourtDetailTableViewController.swift */; };
+		32E3D78C1EB73E74003F2D20 /* CourtAddressDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3D78B1EB73E74003F2D20 /* CourtAddressDetailViewController.swift */; };
+		32E3D7901EB75591003F2D20 /* CourtSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3D78F1EB75591003F2D20 /* CourtSetting.swift */; };
+		32E6712F1EF52443005744EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32E6712E1EF52443005744EE /* GoogleService-Info.plist */; };
+		32EA2A5D1E950145004925DD /* ChangePassword2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA2A5C1E950145004925DD /* ChangePassword2ViewController.swift */; };
+		32EA2A5F1E953D62004925DD /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA2A5E1E953D62004925DD /* FindPasswordViewController.swift */; };
+		32EA2A611E95DFA4004925DD /* FindPassword2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA2A601E95DFA4004925DD /* FindPassword2ViewController.swift */; };
+		32EA2A631E9650D6004925DD /* TeamCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA2A621E9650D6004925DD /* TeamCreateViewController.swift */; };
+		32EDBC6F1E66ACA4004D4D55 /* ChangeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EDBC6E1E66ACA4004D4D55 /* ChangeAddressViewController.swift */; };
+		32EDBC711E66B365004D4D55 /* ChangePhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EDBC701E66B365004D4D55 /* ChangePhoneViewController.swift */; };
+		32EDBC731E66B37D004D4D55 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EDBC721E66B37D004D4D55 /* ChangePasswordViewController.swift */; };
+		32EF6CE21EF2D98C006B0E6C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32EF6CE11EF2D98C006B0E6C /* UserNotifications.framework */; };
+		32F2CD5F1E9CB0280069ED3A /* SlideMenuTeamRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F2CD5E1E9CB0280069ED3A /* SlideMenuTeamRankViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3110B5BB1E49C9F600E43674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3110B59E1E49C9F500E43674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3110B5A51E49C9F500E43674;
+			remoteInfo = slidetest1;
+		};
+		3110B5C61E49C9F600E43674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3110B59E1E49C9F500E43674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3110B5A51E49C9F500E43674;
+			remoteInfo = slidetest1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31F40E1A1E5BEF83007EB0A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16E3723E6C530D950109A3C9 /* Pods-TodayBasket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayBasket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayBasket/Pods-TodayBasket.debug.xcconfig"; sourceTree = "<group>"; };
+		30DE6FF51E55C633009F8342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30E0B9B21E556A9A004E4046 /* Contest_Detail_Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contest_Detail_Setting.swift; sourceTree = "<group>"; };
+		30E0B9B41E556AD0004E4046 /* Contest_Detail_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contest_Detail_ViewController.swift; path = ../Contest_Detail_ViewController.swift; sourceTree = "<group>"; };
+		30EA1FFC1E5708B6007F0B91 /* Contest_Application_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contest_Application_ViewController.swift; path = ../Contest_Application_ViewController.swift; sourceTree = "<group>"; };
+		3110B5A61E49C9F500E43674 /* TodayBasket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayBasket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3110B5A91E49C9F500E43674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3110B5AB1E49C9F500E43674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3110B5B01E49C9F500E43674 /* Trophy_ic.png.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Trophy_ic.png.xcassets; sourceTree = "<group>"; };
+		3110B5B31E49C9F500E43674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3110B5B51E49C9F500E43674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3110B5BA1E49C9F600E43674 /* TodayBasketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayBasketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3110B5BE1E49C9F600E43674 /* slidetest1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slidetest1Tests.swift; sourceTree = "<group>"; };
+		3110B5C01E49C9F600E43674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3110B5C51E49C9F600E43674 /* TodayBasketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayBasketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3110B5C91E49C9F600E43674 /* slidetest1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slidetest1UITests.swift; sourceTree = "<group>"; };
+		3110B5CB1E49C9F600E43674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3110B5D81E49CAC300E43674 /* TodayBasket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodayBasket-Bridging-Header.h"; sourceTree = "<group>"; };
+		3110B5D91E49CAC400E43674 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		3110B5DA1E49CAC400E43674 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		3110B5DC1E49CBC200E43674 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
+		3110B5DE1E4ADCD300E43674 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		3110B5ED1E4B191B00E43674 /* SlideMenu_TeamSearch_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenu_TeamSearch_TableViewController.swift; sourceTree = "<group>"; };
+		316E37E41E5294E600B48FC0 /* SlideMenu_TeamManager_TeamIntro_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenu_TeamManager_TeamIntro_ViewController.swift; sourceTree = "<group>"; };
+		316E37E61E54187900B48FC0 /* SlideMenu_TeamManager_ContestJoin_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenu_TeamManager_ContestJoin_ViewController.swift; sourceTree = "<group>"; };
+		316E37E81E5455FB00B48FC0 /* SlideMenu_TeamManager_ContestJoin_Focus_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenu_TeamManager_ContestJoin_Focus_ViewController.swift; sourceTree = "<group>"; };
+		316E37EA1E559FCE00B48FC0 /* SlideMenu_TeamManager_PlayerManager_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenu_TeamManager_PlayerManager_ViewController.swift; sourceTree = "<group>"; };
+		317057A71E4DA5560091D4F1 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		317057A81E4DA5560091D4F1 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		317057B31E5199FF0091D4F1 /* SlideMenu_TeamMake_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenu_TeamMake_ViewController.swift; sourceTree = "<group>"; };
+		319FFD5E1E61DF590042A8B8 /* SlideMenu_TeamSearch1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenu_TeamSearch1_ViewController.swift; sourceTree = "<group>"; };
+		31B7B5E61E653DD7007B3923 /* test1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test1_ViewController.swift; sourceTree = "<group>"; };
+		31B7B5E81E654193007B3923 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		3203FF341F1B4656005F5393 /* MatchRegisterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchRegisterDetailViewController.swift; sourceTree = "<group>"; };
+		320810F81F245C9900A67566 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		320810FA1F24694500A67566 /* ChangeHWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeHWViewController.swift; sourceTree = "<group>"; };
+		320810FC1F24695500A67566 /* ChangePositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePositionViewController.swift; sourceTree = "<group>"; };
+		320ADEFF1E8B7EA70066ED5F /* TeamManageUserRegisterPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManageUserRegisterPopUpViewController.swift; sourceTree = "<group>"; };
+		320B4FD21EA237620095FEFD /* TeamManageChangeAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManageChangeAddressViewController.swift; sourceTree = "<group>"; };
+		320B4FD41EA237750095FEFD /* TeamManageChangeCourtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManageChangeCourtViewController.swift; sourceTree = "<group>"; };
+		320B4FD61EA237820095FEFD /* TeamManageChangeIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManageChangeIntroViewController.swift; sourceTree = "<group>"; };
+		320EB3211EFFB09200186ACA /* MatchResultDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResultDetailViewController.swift; sourceTree = "<group>"; };
+		320EB3231EFFB0C400186ACA /* MatchResultUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResultUploadViewController.swift; sourceTree = "<group>"; };
+		322031361F0E9DAD003430F6 /* CourtCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtCommentViewController.swift; sourceTree = "<group>"; };
+		3224A5D01E711B8500042DC9 /* TeamDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
+		3224A5D41E751E9000042DC9 /* TeamUserSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamUserSetting.swift; sourceTree = "<group>"; };
+		3227FDD11EBF0E8E00EE450E /* CourtFeedSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtFeedSetting.swift; sourceTree = "<group>"; };
+		3227FDD31EC0667700EE450E /* CourtIntroUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtIntroUpdateViewController.swift; sourceTree = "<group>"; };
+		3227FDD51EC2DA1000EE450E /* CourtFeedUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtFeedUpdateViewController.swift; sourceTree = "<group>"; };
+		323852A31F35987B00CB42DB /* NanumBarunGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothic.otf; sourceTree = "<group>"; };
+		323852A41F35987B00CB42DB /* NanumBarunGothicBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.otf; sourceTree = "<group>"; };
+		323852A51F35987B00CB42DB /* NanumBarunGothicLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicLight.otf; sourceTree = "<group>"; };
+		323852A61F35987B00CB42DB /* NanumBarunGothicUltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicUltraLight.otf; sourceTree = "<group>"; };
+		324281A01E9B701500D70560 /* TeamRankSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamRankSetting.swift; sourceTree = "<group>"; };
+		324BBCA21EA73099007954A7 /* cm_arrow_back_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cm_arrow_back_white.png; sourceTree = "<group>"; };
+		324BBCA41EA75E73007954A7 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		324BBCA61EA75E7C007954A7 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		324BBCA81EA8CC0A007954A7 /* NoticeSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeSetting.swift; sourceTree = "<group>"; };
+		324BBCAA1EA8D7AC007954A7 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
+		324BBCAC1EACA808007954A7 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		324BBCAE1EACAE0A007954A7 /* MatchSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchSetting.swift; sourceTree = "<group>"; };
+		324BBCB01EACBCB4007954A7 /* MatchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailViewController.swift; sourceTree = "<group>"; };
+		324BBCB21EACC6BE007954A7 /* MatchUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchUploadViewController.swift; sourceTree = "<group>"; };
+		324F2F9A1F382DAC00D4F142 /* CourtRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtRegisterViewController.swift; sourceTree = "<group>"; };
+		325950BC1F00C13B00ED12E0 /* MatchResultListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResultListViewController.swift; sourceTree = "<group>"; };
+		325C636B1F04B555007C3B7D /* MatchResultSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResultSetting.swift; sourceTree = "<group>"; };
+		32727C841E5EC29100E40C36 /* 111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111.jpg; sourceTree = "<group>"; };
+		3278D3101F0A2541007A9DBC /* MatchRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchRegisterViewController.swift; sourceTree = "<group>"; };
+		3278D3121F0A2550007A9DBC /* MatchRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchRequestViewController.swift; sourceTree = "<group>"; };
+		3278D3141F0A258C007A9DBC /* MatchResultAllListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResultAllListViewController.swift; sourceTree = "<group>"; };
+		3278D3161F0A259A007A9DBC /* MatchResultTeamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResultTeamListViewController.swift; sourceTree = "<group>"; };
+		328534681E5D8FF7002FBAE5 /* ChangePersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePersonalInfoViewController.swift; sourceTree = "<group>"; };
+		3285346A1E5D9002002FBAE5 /* WithdrawalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawalViewController.swift; sourceTree = "<group>"; };
+		328534731E5E9AC7002FBAE5 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		328534741E5E9AC7002FBAE5 /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
+		328534751E5E9AC7002FBAE5 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		328534791E5EB105002FBAE5 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		32877B371ED6632400006C70 /* revolution-basketball-logo-concept-ideas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "revolution-basketball-logo-concept-ideas.png"; sourceTree = "<group>"; };
+		32877B3B1ED663DE00006C70 /* realmardrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = realmardrid.png; sourceTree = "<group>"; };
+		32877B3F1EDBF8A200006C70 /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMDOHYEON_otf.otf; sourceTree = "<group>"; };
+		32877B411EDBFDA700006C70 /* BMJUA_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMJUA_otf.otf; sourceTree = "<group>"; };
+		3291B15D1E7A625700C5785D /* TeamUserDetailPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamUserDetailPopUpViewController.swift; sourceTree = "<group>"; };
+		3291B15F1E81056600C5785D /* TeamManageUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManageUserViewController.swift; sourceTree = "<group>"; };
+		3291B1611E81059D00C5785D /* TeamManageContestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManageContestViewController.swift; sourceTree = "<group>"; };
+		3291B1631E8105AB00C5785D /* TeamManageInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManageInfoViewController.swift; sourceTree = "<group>"; };
+		3291B1651E824FF900C5785D /* TeamManageUserPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManageUserPopUpViewController.swift; sourceTree = "<group>"; };
+		3291B1671E84FA2C00C5785D /* ContestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContestViewController.swift; sourceTree = "<group>"; };
+		32A244231E4AFE3200CDA02F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32A244251E4AFE3B00CDA02F /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		32B23DD51EB49A1000D0FFB7 /* CourtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtViewController.swift; sourceTree = "<group>"; };
+		32B6959F1E71074900CB2DAC /* TeamSearchSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSearchSetting.swift; sourceTree = "<group>"; };
+		32D939751F151C6800AA9BD7 /* CourtDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtDetailTableViewController.swift; sourceTree = "<group>"; };
+		32E3D78B1EB73E74003F2D20 /* CourtAddressDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtAddressDetailViewController.swift; sourceTree = "<group>"; };
+		32E3D78F1EB75591003F2D20 /* CourtSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourtSetting.swift; sourceTree = "<group>"; };
+		32E6712E1EF52443005744EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32E671301EF6EB1A005744EE /* TodayBasket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayBasket.entitlements; sourceTree = "<group>"; };
+		32EA2A5C1E950145004925DD /* ChangePassword2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassword2ViewController.swift; sourceTree = "<group>"; };
+		32EA2A5E1E953D62004925DD /* FindPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
+		32EA2A601E95DFA4004925DD /* FindPassword2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPassword2ViewController.swift; sourceTree = "<group>"; };
+		32EA2A621E9650D6004925DD /* TeamCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCreateViewController.swift; sourceTree = "<group>"; };
+		32EDBC6E1E66ACA4004D4D55 /* ChangeAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeAddressViewController.swift; sourceTree = "<group>"; };
+		32EDBC701E66B365004D4D55 /* ChangePhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePhoneViewController.swift; sourceTree = "<group>"; };
+		32EDBC721E66B37D004D4D55 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		32EF6CE11EF2D98C006B0E6C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		32F2CD5E1E9CB0280069ED3A /* SlideMenuTeamRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuTeamRankViewController.swift; sourceTree = "<group>"; };
+		622488EB0783DA75CFD4AE24 /* Pods_TodayBasket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayBasket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51AC77B6147D5C7242CA7DD /* Pods-TodayBasket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayBasket.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayBasket/Pods-TodayBasket.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3110B5A31E49C9F500E43674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EF6CE21EF2D98C006B0E6C /* UserNotifications.framework in Frameworks */,
+				29002498D7B616C24352F900 /* Pods_TodayBasket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3110B5B71E49C9F600E43674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3110B5C21E49C9F600E43674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3110B59D1E49C9F500E43674 = {
+			isa = PBXGroup;
+			children = (
+				3110B5A81E49C9F500E43674 /* TodayBasket */,
+				3110B5BD1E49C9F600E43674 /* TodayBasketTests */,
+				3110B5C81E49C9F600E43674 /* TodayBasketUITests */,
+				3110B5A71E49C9F500E43674 /* Products */,
+				B162FA1C7B16BC8439755055 /* Pods */,
+				855CCA1196BF0C11EBF184F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3110B5A71E49C9F500E43674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3110B5A61E49C9F500E43674 /* TodayBasket.app */,
+				3110B5BA1E49C9F600E43674 /* TodayBasketTests.xctest */,
+				3110B5C51E49C9F600E43674 /* TodayBasketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3110B5A81E49C9F500E43674 /* TodayBasket */ = {
+			isa = PBXGroup;
+			children = (
+				32E671301EF6EB1A005744EE /* TodayBasket.entitlements */,
+				328534721E5E9AB5002FBAE5 /* imgs */,
+				30DE6FF41E55C633009F8342 /* Main.storyboard */,
+				3110B5A91E49C9F500E43674 /* AppDelegate.swift */,
+				3110B5DE1E4ADCD300E43674 /* SlideMenuViewController.swift */,
+				3110B5AB1E49C9F500E43674 /* ViewController.swift */,
+				320810F81F245C9900A67566 /* GuideViewController.swift */,
+				324281A01E9B701500D70560 /* TeamRankSetting.swift */,
+				324BBCAC1EACA808007954A7 /* MatchViewController.swift */,
+				3278D3121F0A2550007A9DBC /* MatchRequestViewController.swift */,
+				3278D3101F0A2541007A9DBC /* MatchRegisterViewController.swift */,
+				3203FF341F1B4656005F5393 /* MatchRegisterDetailViewController.swift */,
+				324BBCB01EACBCB4007954A7 /* MatchDetailViewController.swift */,
+				324BBCB21EACC6BE007954A7 /* MatchUploadViewController.swift */,
+				325950BC1F00C13B00ED12E0 /* MatchResultListViewController.swift */,
+				3278D3141F0A258C007A9DBC /* MatchResultAllListViewController.swift */,
+				3278D3161F0A259A007A9DBC /* MatchResultTeamListViewController.swift */,
+				320EB3211EFFB09200186ACA /* MatchResultDetailViewController.swift */,
+				320EB3231EFFB0C400186ACA /* MatchResultUploadViewController.swift */,
+				324BBCAE1EACAE0A007954A7 /* MatchSetting.swift */,
+				325C636B1F04B555007C3B7D /* MatchResultSetting.swift */,
+				32B23DD51EB49A1000D0FFB7 /* CourtViewController.swift */,
+				32E3D78B1EB73E74003F2D20 /* CourtAddressDetailViewController.swift */,
+				324F2F9A1F382DAC00D4F142 /* CourtRegisterViewController.swift */,
+				32D939751F151C6800AA9BD7 /* CourtDetailTableViewController.swift */,
+				322031361F0E9DAD003430F6 /* CourtCommentViewController.swift */,
+				3227FDD31EC0667700EE450E /* CourtIntroUpdateViewController.swift */,
+				3227FDD51EC2DA1000EE450E /* CourtFeedUpdateViewController.swift */,
+				32E3D78F1EB75591003F2D20 /* CourtSetting.swift */,
+				3227FDD11EBF0E8E00EE450E /* CourtFeedSetting.swift */,
+				30E0B9B21E556A9A004E4046 /* Contest_Detail_Setting.swift */,
+				3291B1671E84FA2C00C5785D /* ContestViewController.swift */,
+				30E0B9B41E556AD0004E4046 /* Contest_Detail_ViewController.swift */,
+				30EA1FFC1E5708B6007F0B91 /* Contest_Application_ViewController.swift */,
+				3224A5D01E711B8500042DC9 /* TeamDetailViewController.swift */,
+				3224A5D41E751E9000042DC9 /* TeamUserSetting.swift */,
+				3291B15D1E7A625700C5785D /* TeamUserDetailPopUpViewController.swift */,
+				32EA2A621E9650D6004925DD /* TeamCreateViewController.swift */,
+				32B6959F1E71074900CB2DAC /* TeamSearchSetting.swift */,
+				3291B1631E8105AB00C5785D /* TeamManageInfoViewController.swift */,
+				320B4FD21EA237620095FEFD /* TeamManageChangeAddressViewController.swift */,
+				320B4FD41EA237750095FEFD /* TeamManageChangeCourtViewController.swift */,
+				320B4FD61EA237820095FEFD /* TeamManageChangeIntroViewController.swift */,
+				3291B15F1E81056600C5785D /* TeamManageUserViewController.swift */,
+				3291B1651E824FF900C5785D /* TeamManageUserPopUpViewController.swift */,
+				320ADEFF1E8B7EA70066ED5F /* TeamManageUserRegisterPopUpViewController.swift */,
+				3291B1611E81059D00C5785D /* TeamManageContestViewController.swift */,
+				32A244231E4AFE3200CDA02F /* LoginViewController.swift */,
+				328534791E5EB105002FBAE5 /* TermsViewController.swift */,
+				32A244251E4AFE3B00CDA02F /* RegisterPageViewController.swift */,
+				328534681E5D8FF7002FBAE5 /* ChangePersonalInfoViewController.swift */,
+				32EDBC6E1E66ACA4004D4D55 /* ChangeAddressViewController.swift */,
+				32EDBC701E66B365004D4D55 /* ChangePhoneViewController.swift */,
+				320810FA1F24694500A67566 /* ChangeHWViewController.swift */,
+				320810FC1F24695500A67566 /* ChangePositionViewController.swift */,
+				32EDBC721E66B37D004D4D55 /* ChangePasswordViewController.swift */,
+				32EA2A5C1E950145004925DD /* ChangePassword2ViewController.swift */,
+				32EA2A5E1E953D62004925DD /* FindPasswordViewController.swift */,
+				32EA2A601E95DFA4004925DD /* FindPassword2ViewController.swift */,
+				3285346A1E5D9002002FBAE5 /* WithdrawalViewController.swift */,
+				324BBCA41EA75E73007954A7 /* NoticeViewController.swift */,
+				324BBCAA1EA8D7AC007954A7 /* NoticeDetailViewController.swift */,
+				324BBCA81EA8CC0A007954A7 /* NoticeSetting.swift */,
+				324BBCA61EA75E7C007954A7 /* RecommendViewController.swift */,
+				31B7B5E61E653DD7007B3923 /* test1_ViewController.swift */,
+				31B7B5E81E654193007B3923 /* CollectionViewController.swift */,
+				3110B5B21E49C9F500E43674 /* LaunchScreen.storyboard */,
+				3110B5B01E49C9F500E43674 /* Trophy_ic.png.xcassets */,
+				3110B5DC1E49CBC200E43674 /* BackTableVC.swift */,
+				3110B5D71E49CAA800E43674 /* Supporting Files */,
+				3110B5ED1E4B191B00E43674 /* SlideMenu_TeamSearch_TableViewController.swift */,
+				32F2CD5E1E9CB0280069ED3A /* SlideMenuTeamRankViewController.swift */,
+				317057B31E5199FF0091D4F1 /* SlideMenu_TeamMake_ViewController.swift */,
+				316E37E41E5294E600B48FC0 /* SlideMenu_TeamManager_TeamIntro_ViewController.swift */,
+				316E37E61E54187900B48FC0 /* SlideMenu_TeamManager_ContestJoin_ViewController.swift */,
+				316E37E81E5455FB00B48FC0 /* SlideMenu_TeamManager_ContestJoin_Focus_ViewController.swift */,
+				316E37EA1E559FCE00B48FC0 /* SlideMenu_TeamManager_PlayerManager_ViewController.swift */,
+				319FFD5E1E61DF590042A8B8 /* SlideMenu_TeamSearch1_ViewController.swift */,
+			);
+			path = TodayBasket;
+			sourceTree = "<group>";
+		};
+		3110B5BD1E49C9F600E43674 /* TodayBasketTests */ = {
+			isa = PBXGroup;
+			children = (
+				3110B5BE1E49C9F600E43674 /* slidetest1Tests.swift */,
+				3110B5C01E49C9F600E43674 /* Info.plist */,
+			);
+			path = TodayBasketTests;
+			sourceTree = "<group>";
+		};
+		3110B5C81E49C9F600E43674 /* TodayBasketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3110B5C91E49C9F600E43674 /* slidetest1UITests.swift */,
+				3110B5CB1E49C9F600E43674 /* Info.plist */,
+			);
+			path = TodayBasketUITests;
+			sourceTree = "<group>";
+		};
+		3110B5D71E49CAA800E43674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32877B411EDBFDA700006C70 /* BMJUA_otf.otf */,
+				32877B3F1EDBF8A200006C70 /* BMDOHYEON_otf.otf */,
+				323852A31F35987B00CB42DB /* NanumBarunGothic.otf */,
+				323852A41F35987B00CB42DB /* NanumBarunGothicBold.otf */,
+				323852A51F35987B00CB42DB /* NanumBarunGothicLight.otf */,
+				323852A61F35987B00CB42DB /* NanumBarunGothicUltraLight.otf */,
+				317057A71E4DA5560091D4F1 /* UINavigationBar+Awesome.h */,
+				317057A81E4DA5560091D4F1 /* UINavigationBar+Awesome.m */,
+				3110B5D91E49CAC400E43674 /* SWRevealViewController.h */,
+				3110B5DA1E49CAC400E43674 /* SWRevealViewController.m */,
+				3110B5B51E49C9F500E43674 /* Info.plist */,
+				32E6712E1EF52443005744EE /* GoogleService-Info.plist */,
+				3110B5D81E49CAC300E43674 /* TodayBasket-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		328534721E5E9AB5002FBAE5 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				32727C841E5EC29100E40C36 /* 111.jpg */,
+				328534731E5E9AC7002FBAE5 /* check.png */,
+				32877B3B1ED663DE00006C70 /* realmardrid.png */,
+				32877B371ED6632400006C70 /* revolution-basketball-logo-concept-ideas.png */,
+				328534741E5E9AC7002FBAE5 /* uncheck.png */,
+				324BBCA21EA73099007954A7 /* cm_arrow_back_white.png */,
+				328534751E5E9AC7002FBAE5 /* back.png */,
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
+		855CCA1196BF0C11EBF184F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32EF6CE11EF2D98C006B0E6C /* UserNotifications.framework */,
+				622488EB0783DA75CFD4AE24 /* Pods_TodayBasket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B162FA1C7B16BC8439755055 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16E3723E6C530D950109A3C9 /* Pods-TodayBasket.debug.xcconfig */,
+				D51AC77B6147D5C7242CA7DD /* Pods-TodayBasket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3110B5A51E49C9F500E43674 /* TodayBasket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3110B5CE1E49C9F600E43674 /* Build configuration list for PBXNativeTarget "TodayBasket" */;
+			buildPhases = (
+				D773078E41A9B9AF37241C96 /* [CP] Check Pods Manifest.lock */,
+				3110B5A21E49C9F500E43674 /* Sources */,
+				3110B5A31E49C9F500E43674 /* Frameworks */,
+				3110B5A41E49C9F500E43674 /* Resources */,
+				31F40E1A1E5BEF83007EB0A2 /* CopyFiles */,
+				A18CD84E8CDF4DEC37A15848 /* [CP] Embed Pods Frameworks */,
+				805B27B7DCEFA64E77F57165 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayBasket;
+			productName = slidetest1;
+			productReference = 3110B5A61E49C9F500E43674 /* TodayBasket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3110B5B91E49C9F600E43674 /* TodayBasketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3110B5D11E49C9F600E43674 /* Build configuration list for PBXNativeTarget "TodayBasketTests" */;
+			buildPhases = (
+				3110B5B61E49C9F600E43674 /* Sources */,
+				3110B5B71E49C9F600E43674 /* Frameworks */,
+				3110B5B81E49C9F600E43674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3110B5BC1E49C9F600E43674 /* PBXTargetDependency */,
+			);
+			name = TodayBasketTests;
+			productName = slidetest1Tests;
+			productReference = 3110B5BA1E49C9F600E43674 /* TodayBasketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3110B5C41E49C9F600E43674 /* TodayBasketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3110B5D41E49C9F600E43674 /* Build configuration list for PBXNativeTarget "TodayBasketUITests" */;
+			buildPhases = (
+				3110B5C11E49C9F600E43674 /* Sources */,
+				3110B5C21E49C9F600E43674 /* Frameworks */,
+				3110B5C31E49C9F600E43674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3110B5C71E49C9F600E43674 /* PBXTargetDependency */,
+			);
+			name = TodayBasketUITests;
+			productName = slidetest1UITests;
+			productReference = 3110B5C51E49C9F600E43674 /* TodayBasketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3110B59E1E49C9F500E43674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "MD313-008";
+				TargetAttributes = {
+					3110B5A51E49C9F500E43674 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 85PXJB7ANP;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					3110B5B91E49C9F600E43674 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = 3110B5A51E49C9F500E43674;
+					};
+					3110B5C41E49C9F600E43674 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = 3110B5A51E49C9F500E43674;
+					};
+				};
+			};
+			buildConfigurationList = 3110B5A11E49C9F500E43674 /* Build configuration list for PBXProject "TodayBasket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3110B59D1E49C9F500E43674;
+			productRefGroup = 3110B5A71E49C9F500E43674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3110B5A51E49C9F500E43674 /* TodayBasket */,
+				3110B5B91E49C9F600E43674 /* TodayBasketTests */,
+				3110B5C41E49C9F600E43674 /* TodayBasketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3110B5A41E49C9F500E43674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E6712F1EF52443005744EE /* GoogleService-Info.plist in Resources */,
+				30DE6FF61E55C633009F8342 /* Main.storyboard in Resources */,
+				32877B381ED6632400006C70 /* revolution-basketball-logo-concept-ideas.png in Resources */,
+				32727C851E5EC29100E40C36 /* 111.jpg in Resources */,
+				328534771E5E9AC7002FBAE5 /* uncheck.png in Resources */,
+				328534781E5E9AC7002FBAE5 /* back.png in Resources */,
+				324BBCA31EA73099007954A7 /* cm_arrow_back_white.png in Resources */,
+				3110B5B41E49C9F500E43674 /* LaunchScreen.storyboard in Resources */,
+				328534761E5E9AC7002FBAE5 /* check.png in Resources */,
+				3110B5B11E49C9F500E43674 /* Trophy_ic.png.xcassets in Resources */,
+				32877B3C1ED663DE00006C70 /* realmardrid.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3110B5B81E49C9F600E43674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3110B5C31E49C9F600E43674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		805B27B7DCEFA64E77F57165 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodayBasket/Pods-TodayBasket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A18CD84E8CDF4DEC37A15848 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodayBasket/Pods-TodayBasket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D773078E41A9B9AF37241C96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3110B5A21E49C9F500E43674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E3D7901EB75591003F2D20 /* CourtSetting.swift in Sources */,
+				3291B1641E8105AB00C5785D /* TeamManageInfoViewController.swift in Sources */,
+				324281A11E9B701500D70560 /* TeamRankSetting.swift in Sources */,
+				320810F91F245C9900A67566 /* GuideViewController.swift in Sources */,
+				324BBCAD1EACA808007954A7 /* MatchViewController.swift in Sources */,
+				32EA2A631E9650D6004925DD /* TeamCreateViewController.swift in Sources */,
+				31B7B5E91E654193007B3923 /* CollectionViewController.swift in Sources */,
+				328534691E5D8FF7002FBAE5 /* ChangePersonalInfoViewController.swift in Sources */,
+				3278D3111F0A2541007A9DBC /* MatchRegisterViewController.swift in Sources */,
+				320B4FD71EA237820095FEFD /* TeamManageChangeIntroViewController.swift in Sources */,
+				325C636C1F04B555007C3B7D /* MatchResultSetting.swift in Sources */,
+				3285346B1E5D9002002FBAE5 /* WithdrawalViewController.swift in Sources */,
+				3291B1661E824FF900C5785D /* TeamManageUserPopUpViewController.swift in Sources */,
+				320EB3241EFFB0C400186ACA /* MatchResultUploadViewController.swift in Sources */,
+				316E37E71E54187900B48FC0 /* SlideMenu_TeamManager_ContestJoin_ViewController.swift in Sources */,
+				32A244241E4AFE3200CDA02F /* LoginViewController.swift in Sources */,
+				317057B41E5199FF0091D4F1 /* SlideMenu_TeamMake_ViewController.swift in Sources */,
+				324BBCA91EA8CC0A007954A7 /* NoticeSetting.swift in Sources */,
+				3227FDD41EC0667700EE450E /* CourtIntroUpdateViewController.swift in Sources */,
+				32F2CD5F1E9CB0280069ED3A /* SlideMenuTeamRankViewController.swift in Sources */,
+				320B4FD51EA237750095FEFD /* TeamManageChangeCourtViewController.swift in Sources */,
+				32EA2A5D1E950145004925DD /* ChangePassword2ViewController.swift in Sources */,
+				32B23DD61EB49A1000D0FFB7 /* CourtViewController.swift in Sources */,
+				32EDBC6F1E66ACA4004D4D55 /* ChangeAddressViewController.swift in Sources */,
+				320ADF001E8B7EA70066ED5F /* TeamManageUserRegisterPopUpViewController.swift in Sources */,
+				32EDBC711E66B365004D4D55 /* ChangePhoneViewController.swift in Sources */,
+				320B4FD31EA237620095FEFD /* TeamManageChangeAddressViewController.swift in Sources */,
+				316E37EB1E559FCE00B48FC0 /* SlideMenu_TeamManager_PlayerManager_ViewController.swift in Sources */,
+				3227FDD61EC2DA1000EE450E /* CourtFeedUpdateViewController.swift in Sources */,
+				3110B5EE1E4B191B00E43674 /* SlideMenu_TeamSearch_TableViewController.swift in Sources */,
+				3224A5D11E711B8500042DC9 /* TeamDetailViewController.swift in Sources */,
+				324BBCA71EA75E7C007954A7 /* RecommendViewController.swift in Sources */,
+				32A244261E4AFE3B00CDA02F /* RegisterPageViewController.swift in Sources */,
+				322031371F0E9DAD003430F6 /* CourtCommentViewController.swift in Sources */,
+				320EB3221EFFB09200186ACA /* MatchResultDetailViewController.swift in Sources */,
+				320810FD1F24695500A67566 /* ChangePositionViewController.swift in Sources */,
+				325950BD1F00C13B00ED12E0 /* MatchResultListViewController.swift in Sources */,
+				3291B1681E84FA2C00C5785D /* ContestViewController.swift in Sources */,
+				32EA2A611E95DFA4004925DD /* FindPassword2ViewController.swift in Sources */,
+				30E0B9B31E556A9A004E4046 /* Contest_Detail_Setting.swift in Sources */,
+				30E0B9B51E556AD0004E4046 /* Contest_Detail_ViewController.swift in Sources */,
+				3110B5DF1E4ADCD300E43674 /* SlideMenuViewController.swift in Sources */,
+				3110B5AC1E49C9F500E43674 /* ViewController.swift in Sources */,
+				32E3D78C1EB73E74003F2D20 /* CourtAddressDetailViewController.swift in Sources */,
+				320810FB1F24694500A67566 /* ChangeHWViewController.swift in Sources */,
+				3278D3171F0A259A007A9DBC /* MatchResultTeamListViewController.swift in Sources */,
+				324F2F9B1F382DAC00D4F142 /* CourtRegisterViewController.swift in Sources */,
+				324BBCAB1EA8D7AC007954A7 /* NoticeDetailViewController.swift in Sources */,
+				319FFD5F1E61DF590042A8B8 /* SlideMenu_TeamSearch1_ViewController.swift in Sources */,
+				3224A5D51E751E9000042DC9 /* TeamUserSetting.swift in Sources */,
+				3110B5AA1E49C9F500E43674 /* AppDelegate.swift in Sources */,
+				324BBCB31EACC6BE007954A7 /* MatchUploadViewController.swift in Sources */,
+				3278D3151F0A258C007A9DBC /* MatchResultAllListViewController.swift in Sources */,
+				3285347A1E5EB105002FBAE5 /* TermsViewController.swift in Sources */,
+				324BBCB11EACBCB4007954A7 /* MatchDetailViewController.swift in Sources */,
+				316E37E51E5294E600B48FC0 /* SlideMenu_TeamManager_TeamIntro_ViewController.swift in Sources */,
+				32EDBC731E66B37D004D4D55 /* ChangePasswordViewController.swift in Sources */,
+				324BBCA51EA75E73007954A7 /* NoticeViewController.swift in Sources */,
+				3291B1621E81059D00C5785D /* TeamManageContestViewController.swift in Sources */,
+				3291B1601E81056600C5785D /* TeamManageUserViewController.swift in Sources */,
+				3278D3131F0A2550007A9DBC /* MatchRequestViewController.swift in Sources */,
+				32D939761F151C6800AA9BD7 /* CourtDetailTableViewController.swift in Sources */,
+				316E37E91E5455FB00B48FC0 /* SlideMenu_TeamManager_ContestJoin_Focus_ViewController.swift in Sources */,
+				324BBCAF1EACAE0A007954A7 /* MatchSetting.swift in Sources */,
+				3227FDD21EBF0E8E00EE450E /* CourtFeedSetting.swift in Sources */,
+				3110B5DD1E49CBC200E43674 /* BackTableVC.swift in Sources */,
+				3291B15E1E7A625700C5785D /* TeamUserDetailPopUpViewController.swift in Sources */,
+				3203FF351F1B4656005F5393 /* MatchRegisterDetailViewController.swift in Sources */,
+				3110B5DB1E49CAC400E43674 /* SWRevealViewController.m in Sources */,
+				30EA1FFD1E5708B6007F0B91 /* Contest_Application_ViewController.swift in Sources */,
+				32EA2A5F1E953D62004925DD /* FindPasswordViewController.swift in Sources */,
+				32B695A01E71074900CB2DAC /* TeamSearchSetting.swift in Sources */,
+				317057A91E4DA5560091D4F1 /* UINavigationBar+Awesome.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3110B5B61E49C9F600E43674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3110B5BF1E49C9F600E43674 /* slidetest1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3110B5C11E49C9F600E43674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3110B5CA1E49C9F600E43674 /* slidetest1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3110B5BC1E49C9F600E43674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3110B5A51E49C9F500E43674 /* TodayBasket */;
+			targetProxy = 3110B5BB1E49C9F600E43674 /* PBXContainerItemProxy */;
+		};
+		3110B5C71E49C9F600E43674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3110B5A51E49C9F500E43674 /* TodayBasket */;
+			targetProxy = 3110B5C61E49C9F600E43674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30DE6FF41E55C633009F8342 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30DE6FF51E55C633009F8342 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3110B5B21E49C9F500E43674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3110B5B31E49C9F500E43674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3110B5CC1E49C9F600E43674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3110B5CD1E49C9F600E43674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3110B5CF1E49C9F600E43674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E3723E6C530D950109A3C9 /* Pods-TodayBasket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TodayBasket/TodayBasket.entitlements;
+				DEVELOPMENT_TEAM = 85PXJB7ANP;
+				INFOPLIST_FILE = TodayBasket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TodaySports.TodayBasket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodayBasket/TodayBasket-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3110B5D01E49C9F600E43674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D51AC77B6147D5C7242CA7DD /* Pods-TodayBasket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TodayBasket/TodayBasket.entitlements;
+				DEVELOPMENT_TEAM = 85PXJB7ANP;
+				INFOPLIST_FILE = TodayBasket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TodaySports.TodayBasket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodayBasket/TodayBasket-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3110B5D21E49C9F600E43674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = slidetest1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slidetest1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayBasket.app/TodayBasket";
+			};
+			name = Debug;
+		};
+		3110B5D31E49C9F600E43674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = slidetest1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slidetest1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayBasket.app/TodayBasket";
+			};
+			name = Release;
+		};
+		3110B5D51E49C9F600E43674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = slidetest1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slidetest1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = slidetest1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3110B5D61E49C9F600E43674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = slidetest1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slidetest1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = slidetest1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3110B5A11E49C9F500E43674 /* Build configuration list for PBXProject "TodayBasket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3110B5CC1E49C9F600E43674 /* Debug */,
+				3110B5CD1E49C9F600E43674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3110B5CE1E49C9F600E43674 /* Build configuration list for PBXNativeTarget "TodayBasket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3110B5CF1E49C9F600E43674 /* Debug */,
+				3110B5D01E49C9F600E43674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3110B5D11E49C9F600E43674 /* Build configuration list for PBXNativeTarget "TodayBasketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3110B5D21E49C9F600E43674 /* Debug */,
+				3110B5D31E49C9F600E43674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3110B5D41E49C9F600E43674 /* Build configuration list for PBXNativeTarget "TodayBasketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3110B5D51E49C9F600E43674 /* Debug */,
+				3110B5D61E49C9F600E43674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3110B59E1E49C9F500E43674 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_TodayBasket {
+  umbrella header "Pods-TodayBasket-umbrella.h"
+
+  export *
+  module * { export * }
+}
