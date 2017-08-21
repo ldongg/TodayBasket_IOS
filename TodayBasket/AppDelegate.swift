@@ -15,8 +15,6 @@ import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
-    var pushAction:String = ""
-    var userInfo1: [AnyHashable: Any]? = nil
 
     /// This method will be called whenever FCM receives a new, default FCM token for your
     /// Firebase project's Sender ID.
@@ -45,8 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        Alamofire.request("http://210.122.7.193:8080/TodayBasket_manager/Today_Counting.jsp").responseJSON { (responseData) -> Void in }
+        //Alamofire.request("http://210.122.7.193:8080/TodayBasket_manager/Today_Counting.jsp").responseJSON { (responseData) -> Void in }
        
+        print("===============\(String(describing: self.window?.restorationIdentifier))===============")
         UINavigationBar.appearance().barTintColor = UIColor.white
         UINavigationBar.appearance().tintColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0)
         
@@ -54,12 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         self.initializeFCM(application)
         let token = InstanceID.instanceID().token()
         debugPrint("GCM TOKEN = \(String(describing: token))")
-        
-//        if let payload = launchOptions?[UIApplicationLaunchOptionsKey.remoteNotification] as? NSDictionary, let identifier = payload["identifier"] as? String {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateViewController(withIdentifier: identifier)
-//            window?.rootViewController = vc
-//        }
         
         return true
     }
@@ -76,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         application.applicationIconBadgeNumber = 0
         debugPrint("###> 1.3 AppDelegate DidBecomeActive")
     }
-
+    
     func applicationWillTerminate(_ application: UIApplication) {
         debugPrint("###> 1.3 AppDelegate applicationWillTerminate")
     }
@@ -183,10 +176,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if let messageID = userInfo[gcmMessageIDKey] {
             print("Message ID: \(messageID)")
         }
-        //        let rootVC = self.window?.rootViewController as! SWRevealViewController
-        //        let mainView = rootVC.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        //        mainView.notificationMode = "teamUserManage"
-        //        rootVC.pushFrontViewController(mainView, animated: false)
         
         // Print full message.
         print(userInfo)

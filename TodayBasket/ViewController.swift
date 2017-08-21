@@ -75,6 +75,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         UIApplication.shared.beginIgnoringInteractionEvents()
+        
         self.indicatorTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ViewController.stopIndicator), userInfo: nil, repeats: false)
         
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
@@ -128,12 +129,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         getVersion()
         
-        activityIndicator.center = self.view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
         self.indicatorTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(ViewController.stopIndicator), userInfo: nil, repeats: false)
         
         collectionViewRecentContest.delegate = self
@@ -162,7 +157,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             //self.revealViewController().rearViewRevealWidth = self.view.frame.width - 60
             open.target = self.revealViewController()
             open.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(goGuide))
@@ -238,7 +232,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let rankTeamName = cellMyRank.viewWithTag(2) as! UILabel
             let rankTeamRank = cellMyRank.viewWithTag(3) as! UILabel
             
-            rankTeamEmblem.layer.cornerRadius = rankTeamEmblem.frame.size.width/2
+            rankTeamEmblem.layer.cornerRadius = rankTeamEmblem.frame.size.width / 2
             rankTeamEmblem.clipsToBounds = true
             
             rankTeamName.text = Rank_list[indexPath.row].teamName
