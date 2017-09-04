@@ -77,7 +77,7 @@ class MatchUploadViewController: UIViewController {
         
         createDatePicker()
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MatchUploadViewController.dismissKeyboard))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
         if(isUserLoggedIn) {
@@ -244,8 +244,6 @@ class MatchUploadViewController: UIViewController {
     
     func dismissKeyboard() {
         view.endEditing(true)
-        
-        
     }
     
     @IBAction func matchParkForbiddenButtonTapped(_ sender: Any) {

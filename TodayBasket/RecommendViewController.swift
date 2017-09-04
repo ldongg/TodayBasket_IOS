@@ -28,6 +28,22 @@ class RecommendViewController: UIViewController {
         
         userPk = UserDefaults.standard.string(forKey: "Pk")!
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(done))
+        view.addGestureRecognizer(tap)
+        
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(done))
+        
+        toolbar.setItems([doneButton], animated: false)
+        
+        userEmailTextField.inputAccessoryView = toolbar
+        recommendDataTextView.inputAccessoryView = toolbar
+    }
+    
+    func done() {
+        self.view.endEditing(true)
     }
 
     @IBAction func checkButtonTapped(_ sender: Any) {

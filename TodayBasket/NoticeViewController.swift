@@ -28,7 +28,7 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         noticeTableView.dataSource = self
         // Do any additional setup after loading the view.
         
-        Alamofire.request("http://210.122.7.193:8080/Trophy_part3/Notice.jsp").responseJSON { (responseData) -> Void in
+        Alamofire.request("http://210.122.7.193:8080/TodayBasket_IOS/Notice.jsp").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 print(responseData.result)
                 let swiftyJsonVar = JSON(responseData.result.value!)
