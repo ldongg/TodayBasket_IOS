@@ -28,6 +28,13 @@ class MatchRequestViewController: UIViewController, UITableViewDataSource, UITab
         matchTableView.dataSource = self
         matchTableView.delegate = self
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        print("Memory Warning!")
+        viewDidLoad()
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         matchList = []

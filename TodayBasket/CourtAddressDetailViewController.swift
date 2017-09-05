@@ -36,6 +36,13 @@ class CourtAddressDetailViewController: UIViewController, UITableViewDelegate, U
         getData()
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        print("Memory Warning!")
+        viewDidLoad()
+    }
+    
     func getData() {
         let count = addressSi.count
         for i in 0 ..< count {

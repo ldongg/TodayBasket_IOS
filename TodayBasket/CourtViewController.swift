@@ -56,6 +56,13 @@ class CourtViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        print("Memory Warning!")
+        viewDidLoad()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var count:Int = 0
         

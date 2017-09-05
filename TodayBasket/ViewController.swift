@@ -165,6 +165,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         getMatchResultNeed()
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        print("Memory Warning!")
+        viewDidLoad()
+    }
+    
     func stopIndicator() {
         activityIndicator.stopAnimating()
         UIApplication.shared.endIgnoringInteractionEvents()

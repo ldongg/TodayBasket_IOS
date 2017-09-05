@@ -211,6 +211,13 @@ class MatchDetailViewController: UIViewController {
         }
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        print("Memory Warning!")
+        viewDidLoad()
+    }
+    
     @IBAction func requestButtonTapped(_ sender: Any) {
         
         activityIndicator.center = self.view.center

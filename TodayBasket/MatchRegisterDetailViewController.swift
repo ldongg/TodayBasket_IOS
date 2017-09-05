@@ -281,6 +281,13 @@ class MatchRegisterDetailViewController: UIViewController, UITableViewDelegate, 
         }
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        print("Memory Warning!")
+        viewDidLoad()
+    }
+    
     func allowButtonTapped (sender: UIButton) {
         let nowTime = Date()
         if(matchStartTime_ < nowTime) {
